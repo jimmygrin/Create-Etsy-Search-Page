@@ -1,0 +1,50 @@
+html{
+    box-sizing:border-box;
+    font-family: sans-serif;
+}
+*,
+*::before,
+*::after{box-sizing:inherit;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+
+}
+
+
+.header {
+    background: pink;
+}
+
+
+.body {
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "aside sort", 
+                "aside main";
+   
+}
+
+p {
+    background: red;
+}
+
+.sort {
+    background: green;
+    grid-area: "sort";
+}
+
+.aside {
+    background: yellow;
+    grid-area: "aside";
+}
+
+.main {
+    background: black;
+    color: white;
+    grid-area: "main";
+   
+}
+
