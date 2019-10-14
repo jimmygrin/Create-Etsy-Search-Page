@@ -106,10 +106,10 @@ button {
 
 .nav1 {
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     line-height: 100px;
     margin-bottom: -40px;
-    margin-top: -60px;
+    margin-top: -40px;
     font-size: 13px;
    
 }
@@ -120,12 +120,14 @@ button {
     line-height: 100px;
     margin-top: 20px;
     margin-bottom: 20px;
+    ma
 
 }
     
 .content {
     display: grid;
     width: 1200px;
+    margin: auto;
     grid-template-columns: 1fr 4fr;
     grid-area: 
     "aside section"
