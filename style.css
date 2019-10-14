@@ -32,10 +32,13 @@ html{
     height: 40px;
     border-radius: 25px;
     background: rgb(239,239,239);
+    font-size: 13px;
     
 }
 
-
+/* .fa fa-etsy {
+    color: rgb(225, 108, 53)
+} */
 
 
 #cart {
@@ -44,12 +47,30 @@ html{
     justify-content: space-around;  
     height: 0px;
     align-items: center;
-    border-left: 1px solid black;
+    border-left: 5px solid black;
+    
+}
+
+.shoppingcart {
+    color: black;
+   
 }
 
 i {
     padding: -20;
     margin: -20;
+    color: rgb(225, 108, 53);
+}
+
+.magnify {
+    color: black;
+}
+
+.showmore {
+    color: black;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
 }
 
 
@@ -153,6 +174,44 @@ input {
 }
 
 
+.categories {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+   
+  }
+
+  .image {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.heart {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
 .main {
     margin-top:-100px;
     grid-area: "main";
@@ -175,11 +234,18 @@ input {
     white-space: nowrap;
 }
 
-/* .product p {
+.product p {
+    font-size: 14px;
+    margin-top: 3px;
+    margin-bottom: 8px;
+    padding: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     font-size: 14px;
     
 }
-  */
+ 
 
 
 h3 {

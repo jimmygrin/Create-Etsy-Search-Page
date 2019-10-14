@@ -1,9 +1,18 @@
 var html = items.results.map(item => {
         return `
     <div class="product">    
-    <img src="${item.Images[0].url_fullxfull}" height="200px" width="200px">
-    <h3>${item.title}</h3>
-    <p>$${item.price}</p>
+        <div class="image">
+            
+
+        <img src="${item.Images[0].url_fullxfull}" height="200px" width="200px">
+
+        </div>
+        <div class="overlay">
+            <i class="fa fa-heart"></i>
+        </div>
+        <h3>${item.title}</h3>
+        <p>${item.description}</p>
+        <p>$${item.price}</p>
     </div>
 
     `
